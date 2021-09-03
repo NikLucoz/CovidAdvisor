@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView, TouchableHighlight } from 'react-native';
 
-export default class Home extends React.Component {
+export default class ListaRegioni extends React.Component {
     render() {
       return (
         <View style={styles.background}>
@@ -9,7 +9,7 @@ export default class Home extends React.Component {
 
           <View>
             <Image
-              style={{ marginBottom: 10, height: 300, width: 365}}
+              style={{ marginBottom: 10, height: 355, width: 365}}
               source={require('../../assets/img/health-doctor-vaccine.png')}
             />
           </View>
@@ -21,39 +21,141 @@ export default class Home extends React.Component {
             </View>
                
 
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Abruzzo</Text>
+              </View>
+            </TouchableHighlight>
+
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Basilicata</Text>
+              </View>
+            </TouchableHighlight>
             
-            <View style={styles.textContainer}>
-              <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Marche</Text>
-            </View>
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Calabria</Text>
+              </View>
+            </TouchableHighlight>
 
-            <View style={styles.textContainer}>
-              <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Abruzzo</Text>
-            </View>
-
-            <View style={styles.textContainer}>
-              <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Lazio</Text>
-            </View>
-
-            <View style={styles.textContainer}>
-              <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Campania</Text>
-            </View>
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Campania</Text>
+              </View>
+            </TouchableHighlight>
             
-            <View style={styles.textContainer}>
-              <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Campania</Text>
-            </View>
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Emilia Romagna</Text>
+              </View>
+            </TouchableHighlight>
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Friuli Venezia Giulia</Text>
+              </View>
+            </TouchableHighlight>
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Lazio</Text>
+              </View>
+            </TouchableHighlight>
 
-            <View style={styles.textContainer}>
-              <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Campania</Text>
-            </View>
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Liguria</Text>
+              </View>
+            </TouchableHighlight>
+
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Lombardia</Text>
+              </View>
+            </TouchableHighlight>
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Marche</Text>
+              </View>
+            </TouchableHighlight>
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Molise</Text>
+              </View>
+            </TouchableHighlight>
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Bolzano</Text>
+              </View>
+            </TouchableHighlight>
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Trento</Text>
+              </View>
+            </TouchableHighlight>
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Piemonte</Text>
+              </View>
+            </TouchableHighlight>
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Puglia</Text>
+              </View>
+            </TouchableHighlight>
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Sardegna</Text>
+              </View>
+            </TouchableHighlight>
+
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Sicilia</Text>
+              </View>
+            </TouchableHighlight>
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Toscana</Text>
+              </View>
+            </TouchableHighlight>
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Umbria</Text>
+              </View>
+            </TouchableHighlight>
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Valle d'Aosta</Text>
+              </View>
+            </TouchableHighlight>
+            
+            <TouchableHighlight>
+              <View style={styles.textContainer}>
+                <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Veneto</Text>
+              </View>
+            </TouchableHighlight>
 
           </View>
 
         </ScrollView>
       </View>
-
     );
   }
 }
+
     const styles = StyleSheet.create({
 
         background: {
@@ -64,7 +166,6 @@ export default class Home extends React.Component {
       
         wrapper: {
           width:'100%',
-         
           padding: 20,
           flexDirection: "column",
       
