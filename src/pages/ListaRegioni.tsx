@@ -1,5 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, ScrollView, TouchableHighlight } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView, TouchableHighlight, TouchableOpacity } from 'react-native';
+
+//@ts-ignore
+import * as regione from './InfoRegione.tsx'
+
+function showRegionalInfo(ID: number) {
+  regione.setID(ID);
+
+}
+
 
 export default class ListaRegioni extends React.Component {
     render() {
@@ -21,13 +30,13 @@ export default class ListaRegioni extends React.Component {
             </View>
                
 
-            <TouchableHighlight>
+            <TouchableHighlight onPress={showRegionalInfo(1)}>
               <View style={styles.textContainer}>
                 <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Abruzzo</Text>
               </View>
             </TouchableHighlight>
 
-            <TouchableHighlight>
+            <TouchableHighlight >
               <View style={styles.textContainer}>
                 <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Basilicata</Text>
               </View>

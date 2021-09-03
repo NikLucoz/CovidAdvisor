@@ -14,7 +14,8 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Home from './src/pages/Home.tsx';
 //@ts-ignore
 import ListaRegioni from './src/pages/ListaRegioni.tsx'
-
+//@ts-ignore
+import InfoRegione from './src/pages/InfoRegione.tsx'
 
 const Tab = createBottomTabNavigator();
 const RootNavigator = () => {
@@ -22,6 +23,8 @@ const RootNavigator = () => {
     <Tab.Navigator >
       <Tab.Screen name="Home" component={Home} options = {{headerShown: false, tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="home" color={color} size={size} /> ) }}/>      
       <Tab.Screen name="Lista Regioni" component={ListaRegioni} options = {{headerShown: false, tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="map-marker-radius" color={color} size={size} /> ) }} />
+      <Tab.Screen name="Info Regione" component={InfoRegione} options = {{headerShown: false, tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="map-marker-radius" color={color} size={size} /> ) }} />
+
     </Tab.Navigator>
   );
 }; 
