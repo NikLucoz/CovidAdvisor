@@ -1,23 +1,73 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
 
-export default class Home extends React.Component {
-  render() {
-    return (
+let DatiNazionali: String[] = [];
 
+function get(url: string) {
+  return new Promise<string>((accept, reject) => {
+      var req = new XMLHttpRequest();
+      req.open("GET", url, true);
+      req.responseType = "text";
+
+      req.onload = function(event) {
+          var resp = req.response;
+          if(resp) {
+              accept(resp);
+          }
+      };
+
+      req.send(null);
+  });
+}
+
+async function GetNationalData(){
+  
+  let data = await get('https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale-latest.csv');
+  const list = await data.split(",");
+  DatiNazionali.push(list[29]);
+  DatiNazionali.push(list[31]);
+  DatiNazionali.push(list[27]);
+  DatiNazionali.push(list[26]);
+
+  return 'fatto';
+
+}
+
+export default class Home extends React.Component {
+  
+  state = {
+    data: String,
+    loading: true
+  }
+
+  componentDidMount() {
+
+   GetNationalData().then((data) =>{
+     this.setState({data, loading: false})
+   });
+
+ }
+
+  render() {
+    
+    if(this.state.loading) {
+      console.log("is Loading")
+    } 
+
+    return (
       <View style={styles.background}>
         <ScrollView showsVerticalScrollIndicator={false} style={{ width:'100%', height: '100%', }}>
-
+        
           <View>
             <Image
               style={{marginTop: -30, marginBottom: 10, height: 380, width: 380}}
               source={require('../../assets/img/health-covid-test.png')}
             />
           </View>
+        
 
           <View style={styles.wrapper}>
                 
-            
             <View style={styles.textContainer}>
               <Text style={{fontSize: 25, marginTop: 15 , fontWeight: '600'}}>Dati Nazionali</Text>
             </View>
@@ -29,7 +79,7 @@ export default class Home extends React.Component {
               </View>
               
               <View>
-                <Text style={{fontSize: 33, marginTop: 15, marginLeft: 25, color: '#ab1515', fontWeight: '600'}}>130000</Text>
+                <Text style={{fontSize: 33, marginTop: 15, marginLeft: 25, color: '#ab1515', fontWeight: '600'}}>{DatiNazionali[0]}</Text>
               </View>
             </View>
 
@@ -40,7 +90,7 @@ export default class Home extends React.Component {
               </View>
               
               <View>
-                <Text style={{fontSize: 33, marginTop: 15, marginLeft: 25, color: '#ab1515', fontWeight: '600'}}>6500</Text>
+                <Text style={{fontSize: 33, marginTop: 15, marginLeft: 25, color: '#ab1515', fontWeight: '600'}}>{DatiNazionali[1]}</Text>
               </View>
             </View>
 
@@ -52,7 +102,7 @@ export default class Home extends React.Component {
               </View>
               
               <View>
-                <Text style={{fontSize: 33, marginTop: 15, marginLeft: 25, color: '#ab1515', fontWeight: '600'}}>510</Text>
+                <Text style={{fontSize: 33, marginTop: 15, marginLeft: 25, color: '#ab1515', fontWeight: '600'}}>{DatiNazionali[2]}</Text>
               </View>
             </View>
 
@@ -64,19 +114,18 @@ export default class Home extends React.Component {
               </View>
               
               <View>
-                <Text style={{fontSize: 33, marginTop: 15, marginLeft: 25, color: '#ab1515', fontWeight: '600'}}>100</Text>
+                <Text style={{fontSize: 33, marginTop: 15, marginLeft: 25, color: '#ab1515', fontWeight: '600'}}>{DatiNazionali[3]}</Text>
               </View>
             </View>
 
-
-
           </View>
+
         </ScrollView>
       </View>
-
     );
   }
 }
+
     const styles = StyleSheet.create({
 
         background: {
