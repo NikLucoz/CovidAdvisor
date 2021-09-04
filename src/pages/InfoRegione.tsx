@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { StyleSheet,Text, View, Image, ScrollView, } from 'react-native';
 import {Picker} from '@react-native-community/picker';
-//@ts-ignore
-import * as prova from './prova.tsx'
 
 let NationalData: String[] = [];
 
