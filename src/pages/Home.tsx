@@ -51,11 +51,6 @@ export default class Home extends React.Component {
  }
 
   render() {
-    
-    if(this.state.loading) {
-      console.log("is Loading")
-    } 
-
     return (
       <View style={styles.background}>
         <ScrollView showsVerticalScrollIndicator={false} style={{ width:'100%', height: '100%', }}>
