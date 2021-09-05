@@ -23,7 +23,9 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.niccolo.covidadvisor",
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"
