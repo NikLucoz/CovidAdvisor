@@ -11,7 +11,7 @@ Tramite la ricerca per regione potrai informarti di più su di una regione nello
 
 Niccolò Lucozzi – [@Nik_Lucoz](https://www.instagram.com/nik_lucoz/) – lucozzi.lavoro@gmail.com
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+Distributed under the MIT license. See ``LICENSE`` for more information.
 
 ## Contribuisci
 
