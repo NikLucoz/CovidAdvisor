@@ -1,6 +1,5 @@
 # Covid Advisor 
-Questa app ti permette di visualizzare dati aggiornati sul Covid19 in Italia.
-
+Questa app ti permette di visualizzare dati aggiornati sul Covid19 in Italia.</br>
 Tramite la ricerca per regione potrai informarti di più su di una regione nello specifico.
 
 ![](bannerApp.jpg)
@@ -12,11 +11,15 @@ per scaricarla basterà andare su questo link:
 [Download App](https://github.com/NikLucoz/CovidAdvisor/raw/main/Builds/APK/CovidAdvisor.apk)
 
 Non sai installare APK?
-1. Scarica il file dal link qui sopra (Il file viene etichettato come dannoso perchè non riconosciuto dal sistema ma NON contiene Malware)
+
+1. Scarica il file dal link qui sopra (Il file viene etichettato come dannoso perchè non riconosciuto da Google ma NON contiene Malware)
 2. Vai nella cartella Download del tuo dispositivo
 3. Clicca sul file APK ed accetta le condizioni
-4. Se viene chiesto di inviare una segnalazione a Google Play cliccate su NO
-5. Goditi l'App!
+4. Goditi l'App!
+
+*DISCLAIMER*</br>
+Ogni errore e avviso generato da Google Play è dovuto alla non presenza dell'App nel Play Store.</br>
+Non essendo riconosciuto viene chiesto di inviare un report a Google ma non è necessario per installare ed utilizzare l'App.</br>
 
 ## Meta
 
