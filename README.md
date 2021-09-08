@@ -15,7 +15,8 @@ Non sai installare APK?
 1. Scarica il file dal link qui sopra (Il file viene etichettato come dannoso perchè non riconosciuto dal sistema ma NON contiene Malware)
 2. Vai nella cartella Download del tuo dispositivo
 3. Clicca sul file APK ed accetta le condizioni
-4. Goditi l'App!
+4. Se viene chiesto di inviare una segnalazione a Google Play cliccate su NO
+5. Goditi l'App!
 
 ## Meta
 
