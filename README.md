@@ -12,7 +12,7 @@ per scaricarla basterà andare su questo link:
 [Downoad App](https://github.com/NikLucoz/CovidAdvisor/raw/main/Builds/APK/CovidAdvisor.apk)
 
 Non sai installare APK?
-1. Scarica il file dal link qui sopra
+1. Scarica il file dal link qui sopra (Il file viene etichettato come dannoso perchè non riconosciuto dal sistema ma NON contiene Malware)
 2. Vai nella cartella Download del tuo dispositivo
 3. Clicca sul file APK ed accetta le condizioni
 4. Goditi l'App!
