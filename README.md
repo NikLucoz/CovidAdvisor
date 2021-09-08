@@ -5,6 +5,12 @@ Tramite la ricerca per regione potrai informarti di più su di una regione nello
 
 ![](bannerApp.jpg)
 
+## Download
+
+L'app è completamente gratuita,
+per scaricarla basterà andare su questo link:
+[Downoad App]()
+
 ## Meta
 
 Niccolò Lucozzi – [@Nik_Lucoz](https://www.instagram.com/nik_lucoz/) – lucozzi.lavoro@gmail.com
