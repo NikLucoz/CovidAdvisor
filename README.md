@@ -9,7 +9,7 @@ Tramite la ricerca per regione potrai informarti di più su di una regione nello
 
 L'app è completamente gratuita,
 per scaricarla basterà andare su questo link:
-[Downoad App](https://github.com/NikLucoz/CovidAdvisor/raw/main/Builds/APK/CovidAdvisor.apk)
+[Download App](https://github.com/NikLucoz/CovidAdvisor/raw/main/Builds/APK/CovidAdvisor.apk)
 
 Non sai installare APK?
 1. Scarica il file dal link qui sopra (Il file viene etichettato come dannoso perchè non riconosciuto dal sistema ma NON contiene Malware)
