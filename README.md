@@ -21,6 +21,11 @@ Non sai installare APK?
 Ogni errore e avviso generato da Google Play è dovuto alla non presenza dell'App nel Play Store.</br>
 Non essendo riconosciuto viene chiesto di inviare un report a Google ma non è necessario per installare ed utilizzare l'App.</br>
 
+## Da dove prendo i dati?
+
+I dati sono automaticamente scaricati dalla Repository gestita dalla protezione civile</br>
+[Repository Dati](https://github.com/pcm-dpc/COVID-19)
+
 ## Meta
 
 Niccolò Lucozzi – [@Nik_Lucoz](https://www.instagram.com/nik_lucoz/) – lucozzi.lavoro@gmail.com
