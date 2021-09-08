@@ -58,15 +58,13 @@ async function GetNationalData(){
 function Page() {
   const [regionID, setRegionID] = useState(1);
   const [regionName, setRegionName] = useState('');
-
-
+  
   function calculateOffset(): number{
     if(regionID == 1){
       return 0
     }else if(regionID > 1){
       return (29 * (regionID - 2));
     }
-
     return 0;    
   }
 
@@ -83,8 +81,8 @@ function Page() {
 
         <View style={styles.wrapper}>
           <View style={styles.textContainer}>
-            <Picker style={{width: '100%', height: 65}} mode='dropdown' selectedValue={regionName} onValueChange={(itemValue, itemIndex) => { setRegionID(itemIndex + 1); setRegionName(itemValue.toString())}}>
-              <Picker.Item label='Seleziona Regione' value='Regione non Selezionata' />
+            <Picker style={{width: '100%', height: 65}} mode='dropdown' selectedValue={regionName} onValueChange={(itemValue, itemIndex) => {if (itemValue != '0') setRegionID(itemIndex + 1); setRegionName(itemValue.toString())}}>
+              <Picker.Item label='Seleziona Regione' value='0' />
               <Picker.Item label='Abruzzo' value='Abruzzo' />
               <Picker.Item label='Basilicata' value='Basilicata' />
               <Picker.Item label='Calabria' value='Calabria' />
@@ -97,7 +95,7 @@ function Page() {
               <Picker.Item label='Marche' value='Marche' />
               <Picker.Item label='Molise' value='Molise' />
               <Picker.Item label='Bolzano' value='Bolzano' />
-              <Picker.Item label='Treno' value='Trento' />
+              <Picker.Item label='Trento' value='Trento' />
               <Picker.Item label='Piemonte' value='Piemonte' />
               <Picker.Item label='Puglia' value='Puglia' />
               <Picker.Item label='Sardegna' value='Sardegna' />
