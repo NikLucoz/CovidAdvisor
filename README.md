@@ -5,7 +5,7 @@ Questa app ti permette di visualizzare dati aggiornati sul Covid19 in Italia.
 
 Tramite la ricerca per regione potrai informarti di più su di una regione nello specifico.
 
-![](header.png)
+![](bannerApp.jpg)
 
 ## Meta
 
