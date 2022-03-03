@@ -32,7 +32,7 @@ Niccolò Lucozzi – [@Nik_Lucoz](https://www.instagram.com/nik_lucoz/) – luco
 
 ## Contribuisci
 
-1. Forka la repository (<https://github.com/polaroid/CovidAdvisor/fork>)
+1. Forka la repository (<https://github.com/NikLucoz/CovidAdvisor/fork>)
 2. Crea il Branch per la tua feature (`git checkout -b feature/fooBar`)
 3. esegui un Commit (`git commit -am 'Add some fooBar'`)
 4. Esegui una Push (`git push origin feature/fooBar`)
